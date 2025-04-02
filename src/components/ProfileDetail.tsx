@@ -1,8 +1,7 @@
-
 import React, { useEffect, useState } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { useProfiles } from "@/context/ProfileContext";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import { MapContainer, TileLayer, Marker, Popup } from "@/components/Map";
 import { Button } from "@/components/ui/button";
 import {
   Card,

@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { useProfiles } from "@/context/ProfileContext";
@@ -9,25 +8,10 @@ import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@/componen
 import { ArrowLeft, Loader2, Save } from "lucide-react";
 import { Label } from "@/components/ui/label";
 import { toast } from "sonner";
-import { MapContainer, TileLayer, Marker, useMapEvents } from "react-leaflet";
+import { MapContainer, TileLayer, Marker, LocationMarker } from "@/components/Map";
 import { Badge } from "@/components/ui/badge";
 import LoadingState from "@/components/LoadingState";
 import { Profile } from "@/types";
-
-interface LocationMarkerProps {
-  position: [number, number];
-  setPosition: (position: [number, number]) => void;
-}
-
-const LocationMarker: React.FC<LocationMarkerProps> = ({ position, setPosition }) => {
-  const map = useMapEvents({
-    click(e) {
-      setPosition([e.latlng.lat, e.latlng.lng]);
-    },
-  });
-
-  return <Marker position={position} />;
-};
 
 const ProfileForm: React.FC = () => {
   const { id } = useParams<{ id: string }>();

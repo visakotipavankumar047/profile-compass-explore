@@ -11,8 +11,7 @@ import ProfilePage from "./pages/ProfilePage";
 import Admin from "./pages/Admin";
 import ProfileFormPage from "./pages/ProfileFormPage";
 
-// Add Leaflet CSS
-import "leaflet/dist/leaflet.css";
+// Leaflet CSS import is now handled in the Map component
 
 const queryClient = new QueryClient();
 

@@ -1,9 +1,8 @@
-
 import React, { useState } from "react";
 import ProfileCard from "@/components/ProfileCard";
 import { useProfiles } from "@/context/ProfileContext";
 import { Profile } from "@/types";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import { MapContainer, TileLayer, Marker, Popup } from "@/components/Map";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
