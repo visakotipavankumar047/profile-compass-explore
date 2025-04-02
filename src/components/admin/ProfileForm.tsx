@@ -8,7 +8,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
 import { ArrowLeft, Loader2, Save } from "lucide-react";
 import { Label } from "@/components/ui/label";
-import { toast } from "@/components/ui/sonner";
+import { toast } from "sonner";
 import { MapContainer, TileLayer, Marker, useMapEvents } from "react-leaflet";
 import { Badge } from "@/components/ui/badge";
 import LoadingState from "@/components/LoadingState";

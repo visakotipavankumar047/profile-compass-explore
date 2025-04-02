@@ -1,8 +1,7 @@
-
 import React, { createContext, useContext, useEffect, useState } from "react";
 import { Profile, SearchFilters } from "@/types";
 import { MOCK_PROFILES } from "@/data/mockData";
-import { toast } from "@/components/ui/sonner";
+import { toast } from "sonner";
 
 interface ProfileContextType {
   profiles: Profile[];
