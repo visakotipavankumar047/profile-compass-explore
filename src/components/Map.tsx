@@ -22,7 +22,6 @@ fixLeafletMarker();
 
 // Re-export necessary components
 export { TileLayer, Marker, Popup, useMapEvents };
-export type { MapLayerProps } from 'react-leaflet';
 
 // Wrapper for MapContainer
 export const MapContainer: typeof LeafletMapContainer = (props) => {
